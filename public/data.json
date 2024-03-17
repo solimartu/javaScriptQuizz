@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es la diferencia entre == y === en JavaScript?",
+    "options": [
+      "a) == compara solo el valor de las variables, mientras que === compara el valor y el tipo de las variables.",
+      "b) == compara solo el tipo de las variables, mientras que === compara el valor y el tipo de las variables.",
+      "c) == compara solo el valor de las variables, mientras que === compara solo el tipo de las variables."
+    ],
+    "correctAnswer": 0,
+    "code": "let x = 5;\nlet y = '5';\nconsole.log(x == y); // true\nconsole.log(x === y); // false"
+  },
+  {
+    "id": 2,
+    "question": "¿Qué es una clausura (closure) en JavaScript?",
+    "options": [
+      "a) Una función que no tiene acceso a variables externas.",
+      "b) Una función que tiene acceso a variables externas en el ámbito en el que fue declarada.",
+      "c) Una función que solo puede ser llamada una vez."
+    ],
+    "correctAnswer": 1,
+    "code": "function outer() {\n  let x = 10;\n  function inner() {\n    console.log(x);\n  }\n  return inner;\n}\nlet closureExample = outer();\nclosureExample(); // 10"
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál es la diferencia entre let, const y var en JavaScript?",
+    "options": [
+      "a) let y const son formas de declarar variables con alcance de bloque, mientras que var declara variables con alcance de función o global.",
+      "b) let y const son formas de declarar variables con alcance de función o global, mientras que var declara variables con alcance de bloque.",
+      "c) let y const declaran variables con un valor constante que no puede ser reasignado, mientras que var permite la reasignación de variables."
+    ],
+    "correctAnswer": 0,
+    "code": "if (true) {\n  let x = 10;\n  console.log(x); // 10\n}\nconsole.log(x); // Error: x is not defined"
+  },
+  {
+    "id": 4,
+    "question": "¿Qué es el hoisting en JavaScript?",
+    "options": [
+      "a) Un comportamiento en el que las declaraciones de variables y funciones se mueven al final del ámbito en el que fueron declaradas.",
+      "b) Un comportamiento en el que las declaraciones de variables y funciones se mueven al inicio del ámbito en el que fueron declaradas.",
+      "c) Un comportamiento en el que las declaraciones de variables y funciones se eliminan del ámbito en el que fueron declaradas."
+    ],
+    "correctAnswer": 1,
+    "code": "console.log(x); // undefined\nvar x = 5;"
+  },
+  {
+    "id": 5,
+    "question": "¿Qué es el Event Loop en JavaScript?",
+    "options": [
+      "a) Un mecanismo que permite que JavaScript maneje las operaciones asíncronas de manera eficiente.",
+      "b) Un bucle que ejecuta el código JavaScript de manera síncrona.",
+      "c) Un mecanismo que permite que JavaScript maneje las operaciones sincrónicas de manera eficiente."
+    ],
+    "correctAnswer": 0,
+    "code": "// Ejemplo de código asíncrono\nsetTimeout(() => {\n  console.log('Hola desde el Event Loop');\n}, 2000);"
+  }
+]
